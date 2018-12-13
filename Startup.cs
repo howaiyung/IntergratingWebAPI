@@ -17,6 +17,7 @@ namespace IntergratingWebAPI
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            ServiceDescriptor.AddMvc();
         }
 
         public IConfiguration Configuration { get; }
